@@ -80,6 +80,7 @@ h1 {
     font-size: 16px;
     color:#777777;
     overflow: scroll;
+    line-height: 2;
 }
 
 
@@ -201,15 +202,13 @@ a {
     float: left;
 }
 
-.first{
-    max-width: 300px;
-}
+
 .portfolio-pics {
     float: left;
     width: 300px;
     height: 250px;
-    padding: 20px;
-    margin: 0px;
+    padding: 0px;
+    margin: 20px;
     text-decoration: none;
 }
 
@@ -220,7 +219,130 @@ a {
     bottom: 100px;
     color: white;
     background-color: #4aaaa5;
-    padding: 10px;
+    padding:10px;
     width: 280px;
     text-align: center;
+}
+
+@media screen and (max-width: 980px) {
+.info{
+    width: 60%;
+    margin-left: 5%;
+    margin-bottom: 50%;
+    height: auto;
+    
+}
+h1{
+    position: relative;
+    left: 5%;
+}
+.topnav a{
+    position: relative;
+    left: 75%;
+}
+
+#profile-pic{
+    width: 30%;
+}
+
+.portfolio-pics{
+  float: left; 
+  width: 250px;
+  height: 200px;
+}
+
+.image-text{
+clear: both;
+position: relative;
+width: 230px;
+bottom: 85px;
+}
+
+.portfolio a{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+#submit{
+    width: 15%;
+}
+}
+
+@media screen and (max-width: 768px){
+    .info{
+
+        width: 80%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .topnav a{
+        position: relative;
+        left: 65%;
+    }
+    #profile-pic{
+        width:50%
+
+    }
+.portfolio-pics{
+    margin: 20px;
+    padding: 0px;
+    position: relative;
+
+}
+
+.image-text{
+ 
+}
+
+}
+
+@media screen and (max-width: 640px){
+
+    .info{
+        margin-top:10%;
+        width: 50%;
+    }
+    h1{
+        position: relative;
+        left:0px;
+        width: 100%;
+        padding-right: 0px;
+        padding-left:0px;
+        margin-right: 0px;
+    }
+
+ nav.topnav{
+    background-color: white;
+    position: relative;
+    left:0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+.topnav a{
+    position: relative;
+    top: 15%;
+    left: 32%;
+}
+
+#profile-pic{
+    width: 100%;
+}
+
+.portfolio-pics{
+    
+    margin-right: auto;
+
+}
+
+.image-text{
+    margin-right: 0px;
+}
+#submit{
+    width: 25%;
+}
+
 }
